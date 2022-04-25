@@ -55,7 +55,9 @@
       <section class="section hero">
         <div class="wrapper">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button active" type="button">Заказать услугу</button>
+          <button class="button active" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="section">
@@ -124,10 +126,10 @@
                   alt="Алгоритмизация"
                   width="370"
                 />
+                <figcaption class="specialization-description">
+                  <p>Десктопные приложения</p>
+                </figcaption>
               </figure>
-              <figcaption class="specialization-description">
-                <p>Десктопные приложения</p>
-              </figcaption>
             </li>
             <li class="specialization">
               <figure class="specialization-figure">
@@ -137,10 +139,10 @@
                   alt="Мобильная разработка"
                   width="370"
                 />
+                <figcaption class="specialization-description">
+                  <p>Мобильная разработка</p>
+                </figcaption>
               </figure>
-              <figcaption class="specialization-description">
-                <p>Мобильная разработка</p>
-              </figcaption>
             </li>
             <li class="specialization">
               <figure class="specialization-figure">
@@ -150,10 +152,10 @@
                   alt="Веб дизайн"
                   width="370"
                 />
+                <figcaption class="specialization-description">
+                  <p>Веб дизайн</p>
+                </figcaption>
               </figure>
-              <figcaption class="specialization-description">
-                <p>Веб дизайн</p>
-              </figcaption>
             </li>
           </ul>
         </div>
@@ -530,6 +532,13 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <img src="./images/cross.svg" alt="cross" />
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
